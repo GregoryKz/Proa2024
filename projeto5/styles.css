@@ -1,0 +1,62 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Contêiner do Toggle */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do Toggle Checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Estilo do Label do Toggle */
+.toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 30px;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    transition: background-color 0.3s;
+}
+
+/* Botão dentro do Toggle */
+.toggle-button {
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+/* Estado do Toggle */
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4caf50;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-button {
+    transform: translateX(30px);
+}

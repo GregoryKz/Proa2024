@@ -1,0 +1,78 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #004d00, #001a00); /* Fundo verde degradê escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    height: 600px;
+    background-color: #000; /* Fundo preto para a moldura do celular */
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.phone-frame {
+    padding: 20px;
+}
+
+.circle-image {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url('img/WhatsApp\ Image\ 2024-08-07\ at\ 20.29.54.jpeg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Aumenta o espaçamento entre os botões */
+    align-items: center;
+}
+
+.link {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.github {
+    background-color: #333;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.link i {
+    margin-right: 10px;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
